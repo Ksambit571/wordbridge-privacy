@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WordBridge — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f5f7fa;
+    --bg-raised: #ffffff;
+    --ink: #16202e;
+    --ink-soft: #4b5563;
+    --ink-faint: #8792a3;
+    --accent: #6366f1;
+    --accent-soft: #eef0fe;
+    --border: #e2e8f0;
+    --good: #0d9668;
+    --good-soft: #e8f8f2;
+    --plank: #b4713a;
+    --plank-dark: #8a5227;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --bg-raised: #16202e;
+      --ink: #e7ebf3;
+      --ink-soft: #a3adc2;
+      --ink-faint: #66708a;
+      --accent: #939bfb;
+      --accent-soft: #232a52;
+      --border: #263244;
+      --good: #3ddba0;
+      --good-soft: #103427;
+      --plank: #c98a54;
+      --plank-dark: #8a5227;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f172a;
+    --bg-raised: #16202e;
+    --ink: #e7ebf3;
+    --ink-soft: #a3adc2;
+    --ink-faint: #66708a;
+    --accent: #939bfb;
+    --accent-soft: #232a52;
+    --border: #263244;
+    --good: #3ddba0;
+    --good-soft: #103427;
+    --plank: #c98a54;
+    --plank-dark: #8a5227;
+  }
+  :root[data-theme="light"] {
+    --bg: #f5f7fa;
+    --bg-raised: #ffffff;
+    --ink: #16202e;
+    --ink-soft: #4b5563;
+    --ink-faint: #8792a3;
+    --accent: #6366f1;
+    --accent-soft: #eef0fe;
+    --border: #e2e8f0;
+    --good: #0d9668;
+    --good-soft: #e8f8f2;
+    --plank: #b4713a;
+    --plank-dark: #8a5227;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.doc-head {
+    margin-bottom: 40px;
+  }
+
+  .brand-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .brand-mark {
+    flex: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-name {
+    font-family: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  h1 {
+    font-family: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: clamp(32px, 5vw, 42px);
+    line-height: 1.12;
+    font-weight: 600;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .effective {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.02em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+
+  .lede {
+    margin: 20px 0 0;
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+
+  nav.toc {
+    margin: 32px 0 0;
+    padding: 18px 20px;
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  nav.toc .toc-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 10px;
+    display: block;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    column-gap: 24px;
+  }
+  nav.toc li { break-inside: avoid; margin-bottom: 6px; }
+  nav.toc a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); }
+  nav.toc .n {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color: var(--ink-faint);
+    margin-right: 6px;
+  }
+
+  .plank-divider {
+    height: 14px;
+    margin: 44px 0;
+    border-radius: 4px;
+    background: var(--plank);
+    position: relative;
+    overflow: hidden;
+  }
+  .plank-divider::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--plank-dark) 0 2px,
+      transparent 2px 34px
+    );
+    opacity: 0.55;
+  }
+
+  section {
+    margin: 40px 0;
+    scroll-margin-top: 24px;
+  }
+
+  h2 {
+    font-family: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  h2 .num {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  h3 {
+    font-size: 15.5px;
+    font-weight: 700;
+    margin: 22px 0 8px;
+    color: var(--ink);
+  }
+
+  p { margin: 0 0 14px; max-width: 66ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul, ol.plain { margin: 0 0 14px; padding-left: 22px; max-width: 64ch; }
+  li { margin-bottom: 6px; }
+
+  a { color: var(--accent); }
+
+  .callout {
+    display: flex;
+    gap: 12px;
+    padding: 16px 18px;
+    background: var(--good-soft);
+    border: 1px solid color-mix(in srgb, var(--good) 30%, transparent);
+    border-radius: 10px;
+    margin: 18px 0;
+  }
+  .callout .icon {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    color: var(--good);
+  }
+  .callout p { margin: 0; font-size: 14.5px; color: var(--ink); max-width: none; }
+  .callout strong { color: var(--good); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+    margin: 8px 0 18px;
+  }
+  table caption { text-align: left; font-size: 12px; color: var(--ink-faint); margin-bottom: 6px; }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); font-weight: 700; }
+  td { color: var(--ink-soft); }
+  td:first-child { color: var(--ink); font-weight: 600; white-space: nowrap; }
+
+  .table-scroll { overflow-x: auto; }
+
+  footer.doc-foot {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  footer.doc-foot a { color: var(--ink-soft); }
+
+  @media (max-width: 520px) {
+    nav.toc ol { columns: 1; }
+    .wrap { padding: 40px 18px 72px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="doc-head">
+    <div class="brand-row">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WordBridge bridge icon">
+        <rect x="8" y="24" width="7" height="6" rx="1" fill="var(--plank-dark)"/>
+        <rect x="6" y="22" width="9" height="4" rx="1" fill="#57b85b"/>
+        <rect x="25" y="24" width="7" height="6" rx="1" fill="var(--plank-dark)"/>
+        <rect x="23" y="22" width="9" height="4" rx="1" fill="#57b85b"/>
+        <rect x="12" y="19" width="16" height="5" rx="2" fill="var(--plank)"/>
+        <circle cx="15" cy="21.5" r="0.9" fill="#d7ccc8"/>
+        <circle cx="20" cy="21.5" r="0.9" fill="#d7ccc8"/>
+        <circle cx="25" cy="21.5" r="0.9" fill="#d7ccc8"/>
+        <path d="M13 12 L16.5 17 L20 10 L23.5 17 L27 12" stroke="#facc15" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <span class="brand-name">WordBridge</span>
+    </div>
+    <div class="effective">Effective August 2, 2026</div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">
+      WordBridge is a word-guessing game. This page explains, in plain language, what
+      information the app touches, why, and what say you have over it.
+    </p>
+
+    <nav class="toc" aria-label="Table of contents">
+      <span class="toc-label">On this page</span>
+      <ol>
+        <li><span class="n">01</span><a href="#what-we-collect">What we collect</a></li>
+        <li><span class="n">02</span><a href="#advertising">How advertising works</a></li>
+        <li><span class="n">03</span><a href="#local-data">Data stored on your device</a></li>
+        <li><span class="n">04</span><a href="#children">Children's privacy</a></li>
+        <li><span class="n">05</span><a href="#your-choices">Your choices</a></li>
+        <li><span class="n">06</span><a href="#third-parties">Third-party services</a></li>
+        <li><span class="n">07</span><a href="#security">Data security</a></li>
+        <li><span class="n">08</span><a href="#changes">Changes to this policy</a></li>
+        <li><span class="n">09</span><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <div class="plank-divider" role="presentation"></div>
+
+  <section id="what-we-collect">
+    <h2><span class="num">01</span> What we collect</h2>
+    <p>
+      WordBridge itself does not ask you to create an account, sign in, or hand over your
+      name, email, or any personal details. There is no WordBridge server collecting or
+      storing information about you.
+    </p>
+    <p>
+      The only outside data collection happens through the advertising shown in the app,
+      described in full below.
+    </p>
+    <div class="callout">
+      <svg class="icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 1.5 3 4.5v5c0 4.4 2.98 8.4 7 9.5 4.02-1.1 7-5.1 7-9.5v-5L10 1.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M7 10l2 2 4-4.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p><strong>No account, no personal profile.</strong> Your score, level and hint count live only in the app on your own device.</p>
+    </div>
+  </section>
+
+  <section id="advertising">
+    <h2><span class="num">02</span> How advertising works</h2>
+    <p>
+      WordBridge shows ads through <strong>Google AdMob</strong>, in two places:
+    </p>
+    <ul>
+      <li>A small banner beneath the puzzle while you play.</li>
+      <li>An optional "watch an ad to continue" screen after you run out of lives — you choose whether to watch it.</li>
+    </ul>
+    <p>
+      To select, serve, and measure these ads, Google's Mobile Ads SDK running inside the
+      app may collect:
+    </p>
+    <div class="table-scroll">
+      <table>
+        <caption>Data handled by Google AdMob, not by WordBridge directly</caption>
+        <thead>
+          <tr><th>Data</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Advertising ID</td><td>Resettable device identifier used to serve and frequency-cap ads.</td></tr>
+          <tr><td>IP address / approximate location</td><td>Coarse region-level targeting, not precise GPS location.</td></tr>
+          <tr><td>Device information</td><td>Model, OS version, language — used for ad formatting and fraud prevention.</td></tr>
+          <tr><td>Ad interaction data</td><td>Impressions, clicks, and rewarded-ad completions.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      This collection and its use is governed by
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+      and by
+      <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>.
+      WordBridge does not receive or store this data itself.
+    </p>
+  </section>
+
+  <section id="local-data">
+    <h2><span class="num">03</span> Data stored on your device</h2>
+    <p>
+      Your high score and best-run stats are saved locally on your device using standard
+      Android app storage. This information:
+    </p>
+    <ul>
+      <li>Never leaves your device or gets sent to WordBridge or any server we run.</li>
+      <li>Is removed automatically if you uninstall the app or clear its storage.</li>
+    </ul>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">04</span> Children's privacy</h2>
+    <p>
+      WordBridge is intended for a general audience and is not directed at children under
+      13. We do not knowingly collect personal information from children. If you believe a
+      child has provided us with personal information, contact us using the details below
+      and we will address it.
+    </p>
+  </section>
+
+  <section id="your-choices">
+    <h2><span class="num">05</span> Your choices</h2>
+    <ul>
+      <li>
+        <strong>Ad personalization</strong> — you can limit ad tracking or reset your
+        advertising ID in your device settings
+        (<em>Settings → Privacy → Ads</em> on most Android versions).
+      </li>
+      <li>
+        <strong>Uninstalling the app</strong> removes all locally stored WordBridge data
+        from your device.
+      </li>
+    </ul>
+  </section>
+
+  <section id="third-parties">
+    <h2><span class="num">06</span> Third-party services</h2>
+    <p>WordBridge uses the following third-party service:</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Service</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Google AdMob</td>
+            <td>
+              Displays banner and rewarded ads.
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy policy ↗</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">07</span> Data security</h2>
+    <p>
+      WordBridge does not operate a backend server and does not transmit your gameplay
+      data anywhere. Any data handled by Google AdMob is transmitted using Google's own
+      encrypted connections and is subject to Google's security practices.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">08</span> Changes to this policy</h2>
+    <p>
+      If this policy changes, the "Effective" date at the top of this page will be
+      updated. Material changes will be reflected here before they take effect.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">09</span> Contact</h2>
+    <p>
+      Questions about this policy or how WordBridge handles data can be sent to
+      <a href="mailto:sambitkumar571@gmail.com">sambitkumar571@gmail.com</a>.
+    </p>
+  </section>
+
+  <footer class="doc-foot">
+    WordBridge — a word-guessing bridge game.
+  </footer>
+
+</div>
+</body>
+</html>
